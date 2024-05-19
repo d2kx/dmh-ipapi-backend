@@ -8,6 +8,8 @@ interface IPGeolocationAPIResponse {
   status: string;
 }
 
+const IP_GEOLOCATION_API_URL = 'http://ip-api.com/json/';
+
 const app: Express = express();
 const port = process.env.PORT || 3000;
 
@@ -27,7 +29,7 @@ app.get('/api/location/:ipAddress', async (req: Request, res: Response) => {
 
   try {
     // native fetch requires Node.js 16+, it became stable in 21+
-    const response = await fetch(`http://ip-api.com/json/${ipAddress}`);
+    const response = await fetch(IP_GEOLOCATION_API_URL + ipAddress);
     const { city, country, query, status } =
       (await response.json()) as IPGeolocationAPIResponse;
 
