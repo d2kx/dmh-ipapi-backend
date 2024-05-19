@@ -2,7 +2,21 @@
   "name": "dmh-ipapi-backend",
   "version": "1.0.0",
   "description": "backend part of dmh-ipapi to provide ip to geolocation services",
+  "type": "module",
   "main": "index.js",
   "scripts": {},
-  "author": "Dennis Martin Herbers"
+  "author": "Dennis Martin Herbers",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  }
 }
