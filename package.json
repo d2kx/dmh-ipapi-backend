@@ -1,0 +1,8 @@
+{
+  "name": "dmh-ipapi-backend",
+  "version": "1.0.0",
+  "description": "backend part of dmh-ipapi to provide ip to geolocation services",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Dennis Martin Herbers"
+}
