@@ -21,6 +21,8 @@ npm run build
 npm run start
 ```
 
+the default port, if not specified by the node environment, is 3100
+
 ## api
 
 **GET /api/location/:ipAddress**

@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express, { Express, Request, Response } from 'express';
 import { isIP } from 'net';
 
@@ -11,7 +12,9 @@ interface IPGeolocationAPIResponse {
 const IP_GEOLOCATION_API_URL = 'http://ip-api.com/json/';
 
 const app: Express = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3100;
+
+app.use(cors());
 
 app.get('/', (req: Request, res: Response) => {
   // please do <3
