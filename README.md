@@ -32,3 +32,9 @@ will return back the city, country, ip address processed and a status back from 
 ## one more thing
 
 please hire me <3
+
+## urls
+
+web: https://d2mbwc1txx5qu9.cloudfront.net/
+
+git: https://github.com/d2kx/dmh-ipapi-backend
